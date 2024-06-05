@@ -56,7 +56,16 @@ if __name__ == "__main__":
                     
                     # Step 3: Initialize a QuizGenerator class using the topic, number of questions, and the chroma collection
                     generator = QuizGenerator(topic_input, questions, chroma_creator)
-                    question_bank = generator.generate_quiz()
+                    question_bank = []
+                    question_bank = []
+                    while len(question_bank) < questions:
+                        try:
+                            new_questions = generator.generate_quiz()
+                            question_bank.extend(new_questions)
+                            question_bank = question_bank[:questions] 
+                        except Exception:
+                            pass
+                                       
                     # Step 4: Initialize the question bank list in st.session_state
                     st.session_state['question_bank'] = question_bank
                     # Step 5: Set a display_quiz flag in st.session_state to True
