@@ -67,7 +67,14 @@ mission-quizify/
 2. Set up a virtual environment:
     ```bash
     python -m venv myenv
-    source myenv/bin/activate  # On Windows, use `myenv\Scripts\activate`
+    ```
+    On Mac\Linux
+    ```bash
+    source myenv/bin/activate  
+    ```
+    On Windows
+    ```bash
+    myenv\Scripts\activate
     ```
 
 3. Install the required packages:
