@@ -83,44 +83,45 @@ mission-quizify/
 
 ## Running the Application
 
-To run the application, navigate to the respective task folder and execute the Streamlit application. For example, to run Task 10:
+To run the application, navigate to the respective task folder and execute the Streamlit application. For example, to run application.py:
 ```bash
-cd tasks/task_10
-streamlit run task_10.py
+cd mission-quizify/tasks
+streamlit run application.py
+```
 
 ## Task Details
 
 - **Task 3: Document Processing**
-  File: `tasks/doc_processor.py`
-  Function: Processes uploaded PDF documents, including parsing and extracting pages.
+- File: `tasks/doc_processor.py`
+- Function: Processes uploaded PDF documents, including parsing and extracting pages.
 
 - **Task 4: Embedding Client**
-  File: `tasks/embed_client.py`
-  Function: Connects to Google Cloud's VertexAI to generate text embeddings.
+- File: `tasks/embed_client.py`
+- Function: Connects to Google Cloud's VertexAI to generate text embeddings.
 
 - **Task 5: Chroma Collection Creation**
-  File: `tasks/chroma_creator.py`
-  Function: Creates a Chroma collection from processed documents for subsequent querying and processing.
+- File: `tasks/chroma_creator.py`
+- Function: Creates a Chroma collection from processed documents for subsequent querying and processing.
 
 - **Task 6: Quiz Builder Integration**
-  File: `tasks/builder.py`
-  Function: Creates an interactive application using Streamlit to generate quiz questions based on uploaded documents. This task integrates DocumentProcessor, EmbeddingClient, and ChromaCollectionCreator.
+- File: `tasks/builder.py`
+- Function: Creates an interactive application using Streamlit to generate quiz questions based on uploaded documents. This task integrates DocumentProcessor, EmbeddingClient, and ChromaCollectionCreator.
 
 - **Task 7: Quiz Question Generation**
-  File: `tasks/question_generator.py`
-  Function: Generates quiz questions using an LLM and vector store.
+- File: `tasks/question_generator.py`
+- Function: Generates quiz questions using an LLM and vector store.
 
 - **Task 8: Quiz Generation**
-  File: `tasks/q_generator.py`
-  Function: Generates a list of unique quiz questions based on a specified topic and number of questions.
+- File: `tasks/q_generator.py`
+- Function: Generates a list of unique quiz questions based on a specified topic and number of questions.
 
 - **Task 9: Quiz Management**
-  File: `tasks/manager.py`
-  Function: Manages quiz questions, allowing navigation through questions and answer submission using Streamlit.
+- File: `tasks/manager.py`
+- Function: Manages quiz questions, allowing navigation through questions and answer submission using Streamlit.
 
 - **Task 10: Session State Handling and Quiz Navigation**
-  File: `tasks/application.py`
-  Adds session state handling in Streamlit, initializes and displays the quiz, and provides navigation through quiz questions.
+- File: `tasks/application.py`
+- Adds session state handling in Streamlit, initializes and displays the quiz, and provides navigation through quiz questions.
 
 ## Contributing
 
