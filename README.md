@@ -137,3 +137,9 @@ Contributions are welcome! Please create an issue or submit a pull request for a
 ## License
 
 This project is licensed under the MIT License.
+
+## VIDEO
+
+This is a suggested introductory video about the project.
+
+[https://www.loom.com/share/4abb1a646e6943798be98c6246d6d612?sid=075da0de-23a4-4dc8-8d27-1c12e9733dc2]
